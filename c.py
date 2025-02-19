@@ -10,7 +10,7 @@ attack_in_progress = False
 current_attack = None  # Store details of the current attack
 attack_history = []  # Store attack logs
 
-TELEGRAM_BOT_TOKEN = '7730439450:AAEmmtfG59WL4Sbr4ERy8iHYkZjxY8B2CRs'
+TELEGRAM_BOT_TOKEN = '7909451173:AAGCVD3Utdku_fayZWe9SNB01XoxSsBwECU'
 ADMIN_USER_ID = 7083378335
 MONGO_URI = "mongodb+srv://VIP:7OMbiO6JV74CFy0I@cluster0.rezah.mongodb.net/VipDatabase?retryWrites=true&w=majority&appName=Cluster0"
 DB_NAME = "known"
@@ -21,8 +21,8 @@ COINS_REQUIRED_PER_ATTACK = 5  # Coins required for an attack
 ATTACK_COOLDOWN = 240  # Cooldown period in seconds (5 minutes)
 
 
-threads = 900
-packet_size = 9
+threads = 1000
+packet_size = 13
 
 # Global variables for managing cooldowns
 last_attack_time = defaultdict(lambda: datetime.min)
