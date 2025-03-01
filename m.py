@@ -5,10 +5,10 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7714340481:AAE6spxc4WxKgzfJQdMomryW1WGwcNw5WWA')
+bot = telebot.TeleBot('7652759790:AAGoqH_MPziprClp1NqdyX-L225xjH5dwa8')
 
 # Admin user IDs
-admin_id = {"7083378335", "7660121430", "7657709742" , "7031864464"}
+admin_id = {"7083378335", "7660121430", "6925561335" , "7031864464"}
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -301,7 +301,7 @@ def handle_attack(message):
                     start_attack_reply(message, target, port, time)
 
                     # Simulate attack process
-                    full_command = f"./bgmi {target} {port} {time} 24 1000"
+                    full_command = f"./bgmi {target} {port} {time} 18 950"
                     subprocess.run(full_command, shell=True)
 
                     response = "Attack completed successfully."
